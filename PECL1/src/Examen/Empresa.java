@@ -9,42 +9,41 @@ package Examen;
  *
  * @author razvanvc
  */
-public class Persona {
+public class Empresa {
     
     //Atributos
+    private String cif;
     private String nombre;
-    private String nif;
     
     //Constructor
-
-    public Persona(String nombre, String nif) {
+    public Empresa(String cif, String nombre) {
+        this.cif = cif;
         this.nombre = nombre;
-        this.nif = nif;
     }
     
+    //Métodos
     
-    //Metodos
-
-    public String getNif() {
-        return nif;
-    }
-
-    public void setNif(String nif) {
-        this.nif = nif;
-    }
-
+    //Get
+    
     public String getNombre() {
         return nombre;
     }
-
+    public String getCif() {
+        return cif;
+    }
+    
+    //Set
+    
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+    public void setCif(String cif) {
+        this.cif = cif;
     }
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", nif=" + nif + '}';
-    }
-    
-    
+        return "Empresa{" + "Nombre=" + nombre + ", CIF=" + cif + '}';
+    }    
+        
 }
