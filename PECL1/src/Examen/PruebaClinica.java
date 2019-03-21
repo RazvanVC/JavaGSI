@@ -84,13 +84,11 @@ public class PruebaClinica {
         
         
         System.out.println("El paciente: "+p1.toString()+", ha de pagar "+t1.altaPaciente(p1)+"€"+"\n");
-        System.out.println("El paciente: "+p2.toString()+", ha de pagar "+t2.altaPaciente(p1)+"€"+"\n");
-        System.out.println("El paciente: "+p4.toString()+", ha de pagar "+t4.altaPaciente(p1)+"€"+"\n");
         
         System.out.println("El paciente: "+ p2.toString() + ", estado baja: "+ t3.bajaPaciente(p3) +"\n");
         System.out.println("El paciente: "+ p2.toString() + ", estado baja: "+ t3.bajaPaciente(p3) +"\n");
         
-        System.out.println("Listado de tratamientos: ");
+        System.out.println("\nListado de tratamientos: ");
         c1.listadoTratamientos();
     }
     
