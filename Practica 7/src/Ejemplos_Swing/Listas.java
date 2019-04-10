@@ -53,6 +53,7 @@ public class Listas extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        jList1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jList1.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 jList1ValueChanged(evt);
@@ -105,7 +106,8 @@ public class Listas extends javax.swing.JFrame {
         
         jList1.clearSelection();
 //capturamos la marca seleccionada
-        marca_seleccionada = "Marca: " + (String) jComboBoxVehiculos.getSelectedItem() + " # "; jTextFieldResultado.setText(marca_seleccionada);
+        marca_seleccionada = "Marca: " + (String) jComboBoxVehiculos.getSelectedItem() + " # "; 
+        jTextFieldResultado.setText(marca_seleccionada);
 
     }//GEN-LAST:event_jComboBoxVehiculosActionPerformed
 
