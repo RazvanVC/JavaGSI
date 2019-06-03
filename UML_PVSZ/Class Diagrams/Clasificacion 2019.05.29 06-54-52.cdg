@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Clasificacion">
+  <ClassDiagramComponents>
+    <Class name="Clasificacion" package="Ventanas" visibility="public" isFinal="true" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="RankingFacil" type="ArrayList&lt;String&gt;" visibility="private" isFinal="true"/>
+        <Field name="RankingMedio" type="ArrayList&lt;String&gt;" visibility="private" isFinal="true"/>
+        <Field name="RankingDificil" type="ArrayList&lt;String&gt;" visibility="private" isFinal="true"/>
+        <Field name="RankingImposible" type="ArrayList&lt;String&gt;" visibility="private" isFinal="true"/>
+        <Field name="btnAtrasD" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnAtrasF" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnAtrasI" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnAtrasM" type="javax.swing.JButton" visibility="private"/>
+        <Field name="paneDificil" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="paneFacil" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="paneImposible" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="paneMedio" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="taDificil" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="taFacil" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="taImposible" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="taMedio" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="tbdPane" type="javax.swing.JTabbedPane" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="OrdenarPartidas" returnType="void" visibility="public">
+          <Argument type="ArrayList" name="Ranking"/>
+          <Argument type="String" name="linea"/>
+        </Method>
+        <Method name="leerArchivo" returnType="void" visibility="public">
+          <Argument type="String" name="dificultad"/>
+          <Argument type="ArrayList" name="partidas"/>
+        </Method>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btnAtrasFActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnAtrasMActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnAtrasDActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnAtrasIActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

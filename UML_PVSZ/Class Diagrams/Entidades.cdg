@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Entidades">
+  <ClassDiagramComponents>
+    <Class name="Zombie" package="Entidades" visibility="public" isAbstract="true" xPosition="1067.0" yPosition="37.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="Daño"/>
+          <Argument type="int" name="Resistencia"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Entidad" package="Entidades" visibility="public" isAbstract="true" xPosition="1558.0" yPosition="72.0">
+      <Fields>
+        <Field name="daño" type="int" visibility="private" isFinal="true"/>
+        <Field name="resistencia" type="int" visibility="public"/>
+        <Field name="ciclos" type="int" visibility="public"/>
+        <Field name="posColumna" type="int" visibility="public"/>
+        <Field name="posFila" type="int" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="daño"/>
+          <Argument type="int" name="resistencia"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getResistencia" returnType="int" visibility="public"/>
+        <Method name="getDaño" returnType="int" visibility="public"/>
+        <Method name="getCiclos" returnType="int" visibility="public"/>
+        <Method name="getPosColumna" returnType="int" visibility="public"/>
+        <Method name="getPosFila" returnType="int" visibility="public"/>
+        <Method name="setResistencia" returnType="void" visibility="public">
+          <Argument type="int" name="resistencia"/>
+        </Method>
+        <Method name="setCiclos" returnType="void" visibility="public">
+          <Argument type="int" name="ciclos"/>
+        </Method>
+        <Method name="setPosColumna" returnType="void" visibility="public">
+          <Argument type="int" name="posColumna"/>
+        </Method>
+        <Method name="setPosFila" returnType="void" visibility="public">
+          <Argument type="int" name="posFila"/>
+        </Method>
+        <Method name="Accion" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Nuez" package="Entidades" visibility="public" xPosition="508.0" yPosition="651.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Accion" returnType="/**      * Éste método hace que el Lanzaguisantes dispare a los zombies.      */ void" visibility="public"/>
+        <Method name="toString" returnType="/**      * Devuelve un string del Lanzaguisantes con su resistencia.      */ String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Zombie_Comun" package="Entidades" visibility="public" xPosition="316.0" yPosition="399.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Accion" returnType="/**      * Éste método hace que el zombie avance o ataque.      */ void" visibility="public"/>
+        <Method name="toString" returnType="/**      * Devuelve un string del Zombie_Comun con su resistencia      */ String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Vacio" package="Entidades" visibility="public" xPosition="1301.0" yPosition="190.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Accion" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Zombie_Caracubo" package="Entidades" visibility="public" xPosition="343.0" yPosition="118.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Accion" returnType="/**      * Éste método hace que el zombie avance o ataque.      */ void" visibility="public"/>
+        <Method name="toString" returnType="/**      * Devuelve un string del Zombie_Comun con su resistencia      */ String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Lanzaguisantes" package="Entidades" visibility="public" xPosition="1212.0" yPosition="869.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Accion" returnType="/**      * Éste método hace que el Lanzaguisantes dispare a los zombies.      */ void" visibility="public"/>
+        <Method name="toString" returnType="/**      * Devuelve un string del Lanzaguisantes con su resistencia.      */ String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Planta" package="Entidades" visibility="public" isAbstract="true" xPosition="1392.0" yPosition="651.0">
+      <Fields>
+        <Field name="coste" type="int" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="daño"/>
+          <Argument type="int" name="resistencia"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCoste" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Girasol" package="Entidades" visibility="public" xPosition="508.0" yPosition="817.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Accion" returnType="/**      * Éste método hace que el Girasol vaya generando soles.      */ void" visibility="public"/>
+        <Method name="toString" returnType="/**      * Devuelve un string del Girasol con su resistencia.      */ String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PetaCereza" package="Entidades" visibility="public" xPosition="672.0" yPosition="1026.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Accion" returnType="/**      * Éste método hace que el Lanzaguisantes dispare a los zombies.      */ void" visibility="public"/>
+        <Method name="toString" returnType="/**      * Devuelve un string del Lanzaguisantes con su resistencia.      */ String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Zombie_Deportista" package="Entidades" visibility="public" xPosition="934.0" yPosition="464.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Accion" returnType="/**      * Éste método hace que el zombie avance o ataque.      */ void" visibility="public"/>
+        <Method name="toString" returnType="/**      * Devuelve un string del Zombie_Comun con su resistencia      */ String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="Entidades.Zombie_Caracubo" target="Entidades.Zombie_Comun" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.PetaCereza" target="Entidades.Lanzaguisantes" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Entidades.PetaCereza" target="Entidades.Planta"/>
+    <IsRelation name="is" source="Entidades.Girasol" target="Entidades.Planta"/>
+    <UseRelation source="Entidades.Nuez" target="Entidades.Lanzaguisantes" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Entidades.Zombie_Comun" target="Entidades.Zombie"/>
+    <UseRelation source="Entidades.Girasol" target="Entidades.Girasol" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Entidades.Zombie" target="Entidades.Entidad"/>
+    <IsRelation name="is" source="Entidades.Vacio" target="Entidades.Entidad"/>
+    <IsRelation name="is" source="Entidades.Zombie_Caracubo" target="Entidades.Zombie"/>
+    <IsRelation name="is" source="Entidades.Nuez" target="Entidades.Planta"/>
+    <UseRelation source="Entidades.Lanzaguisantes" target="Entidades.Lanzaguisantes" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Entidades.Planta" target="Entidades.Entidad"/>
+    <UseRelation source="Entidades.Zombie_Comun" target="Entidades.Zombie_Comun" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidades.Zombie_Deportista" target="Entidades.Zombie_Comun" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Entidades.Lanzaguisantes" target="Entidades.Planta"/>
+    <IsRelation name="is" source="Entidades.Zombie_Deportista" target="Entidades.Zombie"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

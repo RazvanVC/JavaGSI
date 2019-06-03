@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ventanas">
+  <ClassDiagramComponents>
+    <Class name="Registro" package="Ventanas" visibility="public" xPosition="1478.0" yPosition="828.0">
+      <Fields>
+        <Field name="btnIniciarSesion" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnRegistrar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="lblDNI" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblNombre" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblTienesCuenta" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tfDNI" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tfNombre" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="btnRegistrarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnIniciarSesionActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="Registrar" returnType="void" visibility="public">
+          <Argument type="Usuario" name="user"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MainMenu" package="Ventanas" visibility="public" xPosition="9.0" yPosition="1117.0">
+      <Fields>
+        <Field name="btnClasificacion" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnJugar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnMiPerfil" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnSalir" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="btnJugarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnSalirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnClasificacionActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnMiPerfilActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Game" package="Ventanas" visibility="public" xPosition="742.0" yPosition="7.0">
+      <Fields>
+        <Field name="tablero" type="Casilla[][]" visibility="public" isStatic="true"/>
+        <Field name="ZGana" type="boolean" visibility="public" isStatic="true"/>
+        <Field name="PGana" type="boolean" visibility="public" isStatic="true"/>
+        <Field name="comands" type="String" visibility="public" isStatic="true"/>
+        <Field name="girasolColocado" type="boolean" visibility="private" isStatic="true"/>
+        <Field name="lanzaColocado" type="boolean" visibility="private" isStatic="true"/>
+        <Field name="ZombiesEnPartida" type="int" visibility="private" isStatic="true"/>
+        <Field name="ZombiesSalidos" type="int" visibility="public" isStatic="true"/>
+        <Field name="ZombiesPorSalir" type="int" visibility="private" isStatic="true"/>
+        <Field name="ZombiesTablero" type="boolean" visibility="private" isStatic="true"/>
+        <Field name="tableroG1" type="JLabel[]" visibility="private" isStatic="true"/>
+        <Field name="tableroG2" type="JLabel[]" visibility="private" isStatic="true"/>
+        <Field name="tableroG3" type="JLabel[]" visibility="private" isStatic="true"/>
+        <Field name="tableroG4" type="JLabel[]" visibility="private" isStatic="true"/>
+        <Field name="tableroG5" type="JLabel[]" visibility="private" isStatic="true"/>
+        <Field name="nuezColocado" type="boolean" visibility="private" isStatic="true"/>
+        <Field name="DIF" type="String" visibility="private"/>
+        <Field name="btnConfirmarComand" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnNextTurn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cbClasificacion" type="javax.swing.JCheckBoxMenuItem" visibility="private"/>
+        <Field name="jMenu2" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenuBar1" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="lblCasilla11" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla12" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla13" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla14" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla15" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla16" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla17" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla18" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla19" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla21" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla22" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla23" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla24" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla25" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla26" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla27" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla28" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla29" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla31" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla32" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla33" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla34" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla35" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla36" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla37" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla38" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla39" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla41" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla42" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla43" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla44" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla45" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla46" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla47" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla48" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla49" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla51" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla52" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla53" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla54" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla55" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla56" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla57" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla58" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblCasilla59" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblComandos" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblEstado" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblIntrucciones" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblSoles" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="lblTurno" type="javax.swing.JLabel" visibility="private" isStatic="true"/>
+        <Field name="menuFile" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="menuMainMenu" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menuSalir" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="tfComando" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="añadirRanking" returnType="void" visibility="public">
+          <Argument type="int" name="Puntuacion"/>
+        </Method>
+        <Method name="ContarArgumentos" returnType="int" visibility="public" isStatic="true">
+          <Argument type="String" name="linea"/>
+        </Method>
+        <Method name="Arguments" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="lineaComando"/>
+        </Method>
+        <Method name="Renderizar" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="SpawnZombie2" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="SpawnZombie" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="getRandomNumberInRange" returnType="int" visibility="private" isStatic="true">
+          <Argument type="int" name="min"/>
+          <Argument type="int" name="max"/>
+        </Method>
+        <Method name="PlantarLanzaguisantes" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="PlantarGirasol" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="PlantarNuez" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="PasarTurno" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="CheckWin" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="ActualizarTablero" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="Zombies" returnType="boolean" visibility="private" isStatic="true"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="btnConfirmarComandActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnNextTurnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tfComandoKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="Registrar" returnType="void" visibility="public">
+          <Argument type="Usuario" name="user"/>
+        </Method>
+        <Method name="menuSalirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="menuMainMenuActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="calcularPuntuacion" returnType="int" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="IniciarPartida" package="Ventanas" visibility="public" xPosition="9.0" yPosition="7.0">
+      <Fields>
+        <Field name="ZombiesSalidos" type="int" visibility="private" isStatic="true"/>
+        <Field name="filas" type="int" visibility="public" isStatic="true"/>
+        <Field name="columnas" type="int" visibility="public" isStatic="true"/>
+        <Field name="turno" type="int" visibility="public" isStatic="true"/>
+        <Field name="dificultad" type="int" visibility="public" isStatic="true"/>
+        <Field name="nzombies" type="int" visibility="public" isStatic="true"/>
+        <Field name="TurnoSpawn" type="int" visibility="public" isStatic="true"/>
+        <Field name="TurnoInicioZombies" type="int" visibility="public" isStatic="true"/>
+        <Field name="ZGana" type="boolean" visibility="public" isStatic="true"/>
+        <Field name="PGana" type="boolean" visibility="public" isStatic="true"/>
+        <Field name="StartGame" type="boolean" visibility="public" isStatic="true"/>
+        <Field name="comands" type="String" visibility="public" isStatic="true"/>
+        <Field name="soles" type="int" visibility="public" isStatic="true"/>
+        <Field name="girasolColocado" type="boolean" visibility="private" isStatic="true"/>
+        <Field name="lanzaColocado" type="boolean" visibility="private" isStatic="true"/>
+        <Field name="victoriaPlantas" type="boolean" visibility="public" isStatic="true"/>
+        <Field name="victoriaZombies" type="boolean" visibility="public" isStatic="true"/>
+        <Field name="vacio" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="girasol" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="lanza1" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="lanza2" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="lanza3" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="nuez1" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="nuez2" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="nuez3" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="nuez4" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="nuez5" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="nuez6" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="nuez7" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="nuez8" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="nuez9" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="nuez10" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="peta1" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="peta2" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="ZComun1" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="ZComun2" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="ZComun3" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="ZComun4" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="ZComun5" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="ZCubo1" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="ZCubo2" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="ZCubo3" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="ZCubo4" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="ZCubo5" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="ZCubo6" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="ZCubo7" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="ZCubo8" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="ZDep1" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="ZDep2" type="ImageIcon" visibility="public" isStatic="true"/>
+        <Field name="btnIniciarPartida" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cbDificultad" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="lblDificultad" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="IniciarZombies" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="IniciarVariables" returnType="void" visibility="private"/>
+        <Method name="getRandomNumberInRange" returnType="int" visibility="private" isStatic="true">
+          <Argument type="int" name="min"/>
+          <Argument type="int" name="max"/>
+        </Method>
+        <Method name="IniciarTablero" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="btnIniciarPartidaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Iniciar_Sesion" package="Ventanas" visibility="public" xPosition="1478.0" yPosition="7.0">
+      <Fields>
+        <Field name="usuarioActual" type="Usuario" visibility="public" isStatic="true"/>
+        <Field name="btnIniciarSesion" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnRegistro" type="javax.swing.JButton" visibility="private"/>
+        <Field name="labDNI" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="textDNI" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="formKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="btnIniciarSesionActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnRegistroActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="textDNIKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Clasificacion" package="Ventanas" visibility="public" isFinal="true" xPosition="1478.0" yPosition="296.0">
+      <Fields>
+        <Field name="RankingFacil" type="ArrayList&lt;String&gt;" visibility="private" isFinal="true"/>
+        <Field name="RankingMedio" type="ArrayList&lt;String&gt;" visibility="private" isFinal="true"/>
+        <Field name="RankingDificil" type="ArrayList&lt;String&gt;" visibility="private" isFinal="true"/>
+        <Field name="RankingImposible" type="ArrayList&lt;String&gt;" visibility="private" isFinal="true"/>
+        <Field name="btnAtrasD" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnAtrasF" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnAtrasI" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnAtrasM" type="javax.swing.JButton" visibility="private"/>
+        <Field name="paneDificil" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="paneFacil" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="paneImposible" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="paneMedio" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="taDificil" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="taFacil" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="taImposible" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="taMedio" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="tbdPane" type="javax.swing.JTabbedPane" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="OrdenarPartidas" returnType="void" visibility="public">
+          <Argument type="ArrayList" name="Ranking"/>
+          <Argument type="String" name="linea"/>
+        </Method>
+        <Method name="leerArchivo" returnType="void" visibility="public">
+          <Argument type="String" name="dificultad"/>
+          <Argument type="ArrayList" name="partidas"/>
+        </Method>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="btnAtrasFActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnAtrasMActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnAtrasDActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnAtrasIActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MiPerfil" package="Ventanas" visibility="public" xPosition="1478.0" yPosition="1405.0">
+      <Fields>
+        <Field name="btnAtras" type="javax.swing.JButton" visibility="private"/>
+        <Field name="lblDNI" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblNombre" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblPartidas_Ganadas" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblPartidas_Perdidas" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblPartidas_Totales" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblPuntos_Totales" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblWinRate" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="varDNI" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="varLoseGames" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="varNombre" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="varPuntos" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="varTotalGames" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="varWinGames" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="varWinRate" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="btnAtrasActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Pantalla_Inicial" package="Ventanas" visibility="public" isFinal="true" xPosition="1478.0" yPosition="1144.0">
+      <Fields>
+        <Field name="usuarios" type="HashMap&lt;String, Usuario&gt;" visibility="public" isStatic="true"/>
+        <Field name="UsuariosRegistrados" type="File" visibility="public" isStatic="true"/>
+        <Field name="listaUsuarios" type="File[]" visibility="public" isStatic="true"/>
+        <Field name="lblTexto" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="formKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="CargarUsuarios" returnType="void" visibility="public"/>
+        <Method name="recuperarUsuario" returnType="Usuario" visibility="public">
+          <Argument type="String" name="ruta"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
